@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     // upward at all. That last rule is load-bearing: the artifact host's
     // frame-ancestors allows claude.ai (and friends) to frame an
     // artifact, so window.top can be a FOREIGN document — a top-addressed
-    // protocol would hand page uuids to that ancestor and accept forged
+    // protocol would hand page uuids to that ancestor and accept forged.
     // "page text" from it, minting attacker HTML as an artifact-origin
     // blob document. The chain never touches the ancestor: requests stop
     // at the root, replies are origin-addressed per hop (never '*' when
